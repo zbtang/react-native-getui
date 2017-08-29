@@ -1,7 +1,6 @@
 package com.getui.reactnativegetui;
 
 import com.facebook.react.ReactPackage;
-import com.facebook.react.bridge.JavaScriptModule;
 import com.facebook.react.bridge.NativeModule;
 import com.facebook.react.bridge.ReactApplicationContext;
 import com.facebook.react.uimanager.ViewManager;
@@ -29,11 +28,6 @@ public class GetuiPackage implements ReactPackage {
         return Arrays.asList(new NativeModule[]{
                 new GetuiModule(reactContext)
         });
-    }
-
-    @Override
-    public List<Class<? extends JavaScriptModule>> createJSModules() {
-        return Collections.emptyList();
     }
 
     @Override
